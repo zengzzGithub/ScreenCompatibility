@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DensityActivity">
+
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="360dp"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="bottom|center_horizontal"
+        android:text="360dp"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:background="@android:color/holo_red_dark"
+        android:gravity="center"
+        android:text="180dp"
+        android:textSize="24sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_gravity="center"
+        android:background="@color/black"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>
