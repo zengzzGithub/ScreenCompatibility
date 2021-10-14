@@ -15,6 +15,7 @@ object DensityHandler {
 
     /**
      * 修改屏幕参数
+     * @param width : 屏幕跨度设置值，单位为dp
      */
     fun setScreenDip(activity: Activity, width: Int) {
         if (width <= 0) {
@@ -51,6 +52,9 @@ object DensityHandler {
      * 恢复屏幕参数
      */
     fun reset(activity: Activity) {
+        if (defaultDensityDpi == 0) {
+            return
+        }
         //替换参数
         val appMetrics = activity.applicationContext.resources.displayMetrics
         appMetrics.density = defaultDensity
